@@ -1,16 +1,17 @@
-import "./App.css";
-import { ListOfUsers } from "./components/ListOfUsers";
-import { CreateNewUser } from "./components/CreateNewUser";
-import { Toaster } from "sonner";
+import { Box, Typography } from "@mui/material";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <ListOfUsers />
-      <CreateNewUser />
-      <Toaster richColors />
-    </>
+    <Box>
+      <Box sx={{ display: "flex", justifyContent: "center", mt: 8 }}>
+        <Typography variant="h5">
+          CRUD usando React JS & Redux Toolkit
+        </Typography>
+      </Box>
+      <Home />
+    </Box>
   );
-}
+};
 
 export default App;
