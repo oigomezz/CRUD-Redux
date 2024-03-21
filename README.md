@@ -1,1 +1,1 @@
-# CRUD-Redux
+# CRUD + Redux
